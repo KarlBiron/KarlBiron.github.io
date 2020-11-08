@@ -9,10 +9,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Karl Vincent Agasang Biron"
+title                    : "Karl Biron"
 title_separator          : "-"
 name                     : "Karl Biron"
-description              : "Data Science Portfolio"
+description              : "Cyber Security Portfolio"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -85,8 +85,8 @@ analytics:
 # Site Author
 author:
   name             : "Karl Biron"
-  avatar           : "/images/bio-pic-2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Science Portfolio"
+  avatar           : "/images/Karl_Biron(HD_Picture).jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Cyber Security Portfolio"
   location         : "Dubai, UAE"
   email            :
   uri              :
