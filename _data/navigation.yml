@@ -2,9 +2,9 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Cyber Security"
+  - title: "Cyber Security Projects"
     url: /cyber-security/
-  - title: "Machine Learning"
+  - title: "Machine Learning Projects"
     url: /machine-learning/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/

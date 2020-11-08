@@ -4,7 +4,8 @@ permalink: /cyber-security/
 title: "Cyber Security Posts by Tags"
 author_profile: structured
 header:
-  images: "/images/wallhaven-r22xrq.jpg"
+  #images: "/images/wallhaven-r22xrq.jpg"
+  image: "/images/zakim.jpg"
 ---
 
 {% include base_path %}
