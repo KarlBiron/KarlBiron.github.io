@@ -5,7 +5,7 @@ title: "Cyber Security Posts by Tags"
 author_profile: structured
 header:
   #images: "/images/wallhaven-r22xrq.jpg"
-  image: "/images/zakim.jpg"
+  image: "/images/green.jpg"
 ---
 
 {% include base_path %}
