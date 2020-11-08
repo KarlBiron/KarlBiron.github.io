@@ -2,8 +2,8 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Machine Learning"
-    url: /cyber-security/ 
+  - title: "Cyber Security"
+    url: /cyber-security/
   - title: "Machine Learning"
     url: /machine-learning/
   # - title: "About"
