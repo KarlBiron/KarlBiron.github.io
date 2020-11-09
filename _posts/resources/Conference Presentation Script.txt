@@ -1,0 +1,124 @@
+Slide 1: Cover Page
+
+>Greetings
+>About the Paper
+>About Me
+>
+
+Slide 2: Cyber Physical Systems
+
+>While CPS is included in several critical sectors, such as power, nuclear plants, and 
+urban infrastructures, these systems are often subtle to various cyber security threats 
+due to several reasons. 
+
+>First, these systems were not designed to be part of a public network, i,e, the Internet, 
+they were in fact built and operated in a segregated and contained environment, this has 
+changed over the past two centuries due to the need for remote operations as well as 
+providing live and continuous support from various vendors. 
+
+>In addition, these CPS are often equipped with IoT devices, many of these are low cost and 
+low-performance devices that are designed with built-in security features. 
+
+>As a result, several security concerns emerged about these critical systems
+
+Slide 3: CPS Security Attacks
+
+>Cyber security threats and attacks have been on the rise during the past decade. 
+The advancement of technology in cyber-physical systems (CPS) has led to many advantages 
+but also created several new advanced threats. 
+
+>A real example would be the event known as the Estonia Blackout, which involved a series of 
+cyber-attacks directed towards government entities such as ministries, financial institutions
+, Internet Service Providers (ISPs), and telecommunication land line systems. These attacks 
+that targeted critical infrastructures caused a so-called “cyber blackout”, which 
+effectively took down various online services including critical ones such as banking. 
+
+>In 2017, Triton Malware was used to attack the petrochemical plant in the Kingdom of Saudi 
+Arabia (KSA) and caused it to shutdown to prevent an explosion.
+
+>In 2010, the Stuxnet Worm attack an Iranian nuclear facility.  The Stuxnet worm is capable 
+of seizing control of industrial plants. Some Western experts say its complexity suggests 
+it could only have been created by a "nation state".
+
+Slide 4: Fusion ApproachHoneypot and Darknet
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Slide 5: Proposed Big Data Fusion Approach
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Slide 6: General Project Information
+
+>Analyzed Data: 18 months
+>Number of Monitors: 92 (46 Honeypot sensors, and 46 Darknet sensors)
+>Data Volume: 100 GB
+>Activities originated from 150 countries.
+
+
+Slide 7: Preliminary Results (Targeted Services)
+
+>Description the columns
+>Describe Findings (IPMI)
+>What is IPMI
+>Modbus as de facto for SCADA
+
+Slide 8: Preliminary Results (Focused on Honeypot Dataset)
+
+>IPMI has been found critical in the majority of its communication
+
+>BACnet is distributed almost equally between medium and high severity. 
+
+>The majority of S7Comm communication has been found high in terms of severity.
+
+>Modbus traffic are distributed between high and critical, with majority to the latter. 
+
+>Our investigation reveals that IPMI has probably the most targeted attacks not just in 
+terms of numbers, but also severity. 
+
+>Furthermore, the lack of critical severity label within BACnet and S7Comm is because 
+these services run on top of UDP.  As such, no connection setup and data exchange. 
+
+>Modbus has been found to be the only CPS service that has all variants of attack severity 
+(maybe because running on top of TCP )
+
+Slide 9: Discussions and Limitations 
+
+>Collaboration between different entities 
+>Access the critical infrastructure 
+>Getting approval/authorizations 
+>Dataset used is limited to the scope we cover and the duration (period) of our analysis. 
+>Almost impossible to assess the real attack impact (damage) on physical infrastructure 
+without having one. 
+>Identifying and filtering between benign and malicious data in systematic and automated 
+manners are done manually.  
+
+Slide 10: Conclusion
+
+>Big Data fusion model that leverages a correlation engine.
+>Utilized two types of trap-based network monitoring systems, namely, Honeypot and Darknet. 
+>The Honeypot data are found to be more stable than darknet. 
+>The Darknet, though are more attractive monitors to hackers and easier to secure and hide. 
+>The IPMI is the number one targeted CPS service (among the top conventional darknet 
+abused services)
+
+Slide 11: Future Work
+
+>Automating Internet scanners’ IP addresses filtering 
+>Investigating larger and more recent dataset 
+>Integrating our solution with physical testbed 
+>Leveraging machine learning techniques to predict future attacks
+
+Slide 12: Thank You
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~ Q & A session ~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
