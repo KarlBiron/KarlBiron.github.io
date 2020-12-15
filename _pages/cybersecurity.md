@@ -11,6 +11,6 @@ header:
   image: "/images/green.jpg"
 ---
 
-<a href="https://karlbiron.github.io/pages/2020-12-05-Ruby">
-   <img src="https://karlbiron.github.io/assets/template.jpg">
+<a href="https://karlbiron.github.io/2020-12-05-Ruby">
+   <img src="https://karlbiron.github.io/assets/template.png">
 </a>
