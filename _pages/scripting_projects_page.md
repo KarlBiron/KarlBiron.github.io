@@ -27,7 +27,7 @@ header:
    <img src="https://karlbiron.github.io/assets/Ruby_Confucius_grammar.png">
 </a>
 
-<a href="https://karlbiron.github.io/scripting_projects_posts/Ruby_Csv_for_the_wins/">
+<a href="https://karlbiron.github.io/scripting_projects_posts/Ruby_Csv_for_the_win/">
    <img src="https://karlbiron.github.io/assets/Ruby_Csv_for_the_win.png">
 </a>
 
