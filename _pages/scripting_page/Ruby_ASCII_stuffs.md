@@ -42,3 +42,9 @@ for arg in ARGV
    puts result
 end
 ```
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
