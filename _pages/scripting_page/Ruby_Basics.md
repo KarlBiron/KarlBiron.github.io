@@ -1,16 +1,16 @@
 ---
-title: "Ruby Challenge"
+title: "Ruby Basics"
 date: 2020-12-05
 tags: [Ruby scripting]
 header:
   #image: "/images/perceptron/percept.jpg"
 excerpt: "Ruby Basics"
 mathjax: "true"
-permalink: /2020-12-05-Ruby/
+permalink: /scripting_page/Ruby_Basics/
 ---
 
 # H1 Heading
-# Python Challenge
+# Ruby Basics
 
 ## H2 Heading
 
@@ -33,6 +33,31 @@ Here's a numbered list
 1. First
 2. Second
 3. Third
+
+Ruby code block:
+```Ruby
+#!/usr/bin/env ruby
+
+for arg in ARGV
+   file = File.open(arg)
+
+   file_data = file.read
+
+   # gsub: "g" stands for global
+   # and "sub" stands for substite
+   # Alternative solution is the .delete
+   # Ruby method as shown below:
+   # a = "\tI have some whitespaces.\t"
+   # a.delete!(" ")     #=>  "\tIhavesomewhitespaces.\t"
+   sanitized = file_data.gsub(" ","")
+
+   # The H used with the pack method gives
+   # you a hex number to string conversion.
+   result = [sanitized].pack("H*")
+
+   puts result
+end
+```
 
 Python code block:
 ```python

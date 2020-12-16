@@ -11,6 +11,10 @@ header:
   image: "/images/green.jpg"
 ---
 
-<a href="https://karlbiron.github.io/2020-12-05-Ruby/">
-   <img src="https://karlbiron.github.io/assets/template.png">
+<a href="https://karlbiron.github.io/scripting_page/Ruby_Basics/">
+   <img src="https://karlbiron.github.io/assets/Ruby_Basics.png">
+</a>
+
+<a href="https://karlbiron.github.io/scripting_page/Ruby_ASCII_Stuffs/">
+   <img src="https://karlbiron.github.io/assets/Ruby_ASCII_Stuffs.png">
 </a>
