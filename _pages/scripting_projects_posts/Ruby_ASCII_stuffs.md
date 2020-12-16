@@ -6,7 +6,7 @@ header:
   #image: "/images/perceptron/percept.jpg"
 excerpt: "Ruby: ASCII Stuffs"
 mathjax: "true"
-permalink: /scripting_page/Ruby_ASCII_Stuffs/
+permalink: /scripting_projects_posts/Ruby_ASCII_Stuffs/
 ---
 
 # H1 Heading

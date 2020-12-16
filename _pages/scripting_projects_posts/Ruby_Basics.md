@@ -6,7 +6,7 @@ header:
   #image: "/images/perceptron/percept.jpg"
 excerpt: "Ruby Basics"
 mathjax: "true"
-permalink: /scripting_page/Ruby_Basics/
+permalink: /scripting_projects_posts/Ruby_Basics/
 ---
 
 # H1 Heading

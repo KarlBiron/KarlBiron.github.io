@@ -4,9 +4,11 @@ main:
     url: /about/
   - title: "Resume"
     url: https://karlbiron.github.io/assets/documents/KarlBiron2020Resume_v2.0.pdf
-  - title: "Cyber Security Projects"
-    url: /cyber-security/
-  - title: "Machine Learning Projects"
+  - title: "Scripting Projects"
+    url: /scripting_projects_page/
+  - title: "PenTest Projects"
+    url: /pentest_projects_page/
+  - title: "AI Projects"
     url: /machine-learning/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
