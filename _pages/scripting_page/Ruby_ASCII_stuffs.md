@@ -19,7 +19,7 @@ permalink: /scripting_page/Ruby_ASCII_Stuffs/
 What about a [link](https://github.com/KarlBiron)
 
 Ruby code block:
-```Ruby
+```ruby
 #!/usr/bin/env ruby
 
 for arg in ARGV
