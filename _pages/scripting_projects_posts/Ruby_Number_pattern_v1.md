@@ -1,40 +1,33 @@
 ---
-title: "Ruby Basics"
+title: "Ruby Challenge: Number_pattern_v1"
 date: 2020-12-05
 tags: [Ruby scripting]
 header:
   #image: "/images/perceptron/percept.jpg"
-excerpt: "Ruby Basics"
+excerpt: "Ruby Challenge: Number_pattern_v1"
 mathjax: "true"
-permalink: /scripting_projects_posts/Ruby_Basics/
+permalink: /scripting_projects_posts/Ruby_Number_pattern_v1/
 ---
 
 # H1 Heading
-# Ruby Basics
+# Ruby Challenge: Number_pattern_v1
 
-## H2 Heading
-
-### H3 Heading
-
-"Hello World" Ruby:
-```ruby
-puts "Hello, World!"
-```
-
-"Argumentative" Ruby:
-```ruby
-for i in 0 ... ARGV.length
-   print "#{ARGV[i]} "
-end
-```
-
-"Here_Kitty" Ruby:
+Ruby Code Solution:
 ```ruby
 for arg in ARGV
    file = File.open(arg)
 
-   file_data = file.read
+   file_data = file.read.to_i
 
-   puts file_data
+   #puts file_data
+
+   first = file_data + 3
+   second = file_data + 4
+   third = file_data + 7
+   forth = file_data + 10
+   fifth = file_data + 17
+
+   print "#{first} #{second} #{third} #{forth} #{fifth}"
+
 end
 ```

@@ -1,40 +1,35 @@
 ---
-title: "Ruby Basics"
+title: "Ruby Challenge: Csv_for_the_win"
 date: 2020-12-05
 tags: [Ruby scripting]
 header:
   #image: "/images/perceptron/percept.jpg"
-excerpt: "Ruby Basics"
+excerpt: "Ruby Challenge: Csv_for_the_win"
 mathjax: "true"
-permalink: /scripting_projects_posts/Ruby_Basics/
+permalink: /scripting_projects_posts/Ruby_Csv_for_the_win/
 ---
 
 # H1 Heading
-# Ruby Basics
+# Ruby Challenge: Csv_for_the_win
 
-## H2 Heading
-
-### H3 Heading
-
-"Hello World" Ruby:
-```ruby
-puts "Hello, World!"
-```
-
-"Argumentative" Ruby:
-```ruby
-for i in 0 ... ARGV.length
-   print "#{ARGV[i]} "
-end
-```
-
-"Here_Kitty" Ruby:
+Ruby Code Solution:
 ```ruby
 for arg in ARGV
    file = File.open(arg)
 
    file_data = file.read
 
-   puts file_data
+   ### Convert a String to An Array of Characters ###
+   # .split(","): splits the data into the comma ","
+   # delimeter since this text file is in the form of
+   # a CSV
+   # .map(): converts the split file into an array
+   # &:to_f: converts all the elements within the
+   # array to be in the float format
+   arr = file_data.split(",").map(&:to_f)
+
+   # .sum: adds all the array elements
+   print arr.sum
+
 end
 ```

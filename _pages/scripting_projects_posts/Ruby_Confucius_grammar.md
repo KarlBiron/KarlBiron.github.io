@@ -1,40 +1,33 @@
 ---
-title: "Ruby Basics"
+title: "Ruby Challenge: Confucius_grammar"
 date: 2020-12-05
 tags: [Ruby scripting]
 header:
   #image: "/images/perceptron/percept.jpg"
-excerpt: "Ruby Basics"
+excerpt: "Ruby Challenge: Confucius_grammar"
 mathjax: "true"
-permalink: /scripting_projects_posts/Ruby_Basics/
+permalink: /scripting_projects_posts/Ruby_Confucius_grammar/
 ---
 
 # H1 Heading
-# Ruby Basics
+# Ruby Challenge: Confucius_grammar
 
-## H2 Heading
-
-### H3 Heading
-
-"Hello World" Ruby:
-```ruby
-puts "Hello, World!"
-```
-
-"Argumentative" Ruby:
-```ruby
-for i in 0 ... ARGV.length
-   print "#{ARGV[i]} "
-end
-```
-
-"Here_Kitty" Ruby:
+Ruby Code Solution:
 ```ruby
 for arg in ARGV
    file = File.open(arg)
 
    file_data = file.read
 
-   puts file_data
+   file_data.each_line do |line|
+     # .downcase: lower case all characters first
+     # .sub(/^./, &:upcase): Uppercase all beginning characters of each line
+     # .gsub(" i "," I "): globally convert all " i " to " I " for grammatical correctness
+     # .sub(" he "," He "): converts all " he " to " He " for grammatical correctness
+     puts line.downcase.sub(/^./, &:upcase).gsub(" i "," I ").sub(" he "," He ")
+   end
+
+
 end
+
 ```

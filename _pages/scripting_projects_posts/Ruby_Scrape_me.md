@@ -1,40 +1,26 @@
 ---
-title: "Ruby Basics"
+title: "Ruby Challenge: Scrape_me"
 date: 2020-12-05
 tags: [Ruby scripting]
 header:
   #image: "/images/perceptron/percept.jpg"
-excerpt: "Ruby Basics"
+excerpt: "Ruby Challenge: Scrape_me"
 mathjax: "true"
-permalink: /scripting_projects_posts/Ruby_Basics/
+permalink: /scripting_projects_posts/Ruby_Scrape_me/
 ---
 
 # H1 Heading
-# Ruby Basics
+# Ruby Challenge: Scrape_me
 
-## H2 Heading
-
-### H3 Heading
-
-"Hello World" Ruby:
+Ruby Code Solution:
 ```ruby
-puts "Hello, World!"
-```
+require 'open-uri'
 
-"Argumentative" Ruby:
-```ruby
-for i in 0 ... ARGV.length
-   print "#{ARGV[i]} "
-end
-```
-
-"Here_Kitty" Ruby:
-```ruby
 for arg in ARGV
-   file = File.open(arg)
 
-   file_data = file.read
+   URI.open(arg) {|f|
+     f.each_line {|line| puts line.chomp}
+   }
 
-   puts file_data
 end
 ```

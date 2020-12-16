@@ -1,40 +1,40 @@
 ---
-title: "Ruby Basics"
+title: "Ruby Challenge: White_socks_with_boots"
 date: 2020-12-05
 tags: [Ruby scripting]
 header:
   #image: "/images/perceptron/percept.jpg"
-excerpt: "Ruby Basics"
+excerpt: "Ruby Challenge: White_socks_with_boots"
 mathjax: "true"
-permalink: /scripting_projects_posts/Ruby_Basics/
+permalink: /scripting_projects_posts/Ruby_White_socks_with_boots/
 ---
 
 # H1 Heading
-# Ruby Basics
+# Ruby Challenge: White_socks_with_boots
 
-## H2 Heading
-
-### H3 Heading
-
-"Hello World" Ruby:
+Ruby Code Solution:
 ```ruby
-puts "Hello, World!"
-```
+require 'socket'
 
-"Argumentative" Ruby:
-```ruby
 for i in 0 ... ARGV.length
-   print "#{ARGV[i]} "
-end
-```
+   #puts "#{i} #{ARGV[i]}"
+   #=>  0 listen.runcode.ninja
+   #=>  1 9005
 
-"Here_Kitty" Ruby:
-```ruby
-for arg in ARGV
-   file = File.open(arg)
+   hostname = "#{ARGV[0]}"
+   port = "#{ARGV[1]}".to_i
 
-   file_data = file.read
+   #puts hostname
+   #puts port
 
-   puts file_data
+   s = TCPSocket.open(hostname, port)
+
+   while line = s.gets
+     print line.chomp
+   end
+  s.close
+
+break
+
 end
 ```

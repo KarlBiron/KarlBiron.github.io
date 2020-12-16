@@ -1,40 +1,40 @@
 ---
-title: "Ruby Basics"
+title: "Ruby Challenge: Simple_addition"
 date: 2020-12-05
 tags: [Ruby scripting]
 header:
   #image: "/images/perceptron/percept.jpg"
-excerpt: "Ruby Basics"
+excerpt: "Ruby Challenge: Simple_addition"
 mathjax: "true"
-permalink: /scripting_projects_posts/Ruby_Basics/
+permalink: /scripting_projects_posts/Ruby_Simple_addition/
 ---
 
 # H1 Heading
-# Ruby Basics
+# Ruby Challenge: Simple_addition
 
-## H2 Heading
-
-### H3 Heading
-
-"Hello World" Ruby:
-```ruby
-puts "Hello, World!"
-```
-
-"Argumentative" Ruby:
-```ruby
-for i in 0 ... ARGV.length
-   print "#{ARGV[i]} "
-end
-```
-
-"Here_Kitty" Ruby:
+Ruby Code Solution:
 ```ruby
 for arg in ARGV
-   file = File.open(arg)
+  file = File.open(arg)
 
-   file_data = file.read
+  file.each_line do |line|
 
-   puts file_data
+    # The "if" statement below catches any numbers
+    # that are in the form of a decimal and convert
+    # them into a float format.
+
+    # puts 'abcdefg'.start_with?('abc')  #=> true
+    if line.start_with?('.')
+      line.gsub!(" ","+")
+      line.gsub!(".","0.")
+      puts eval line
+    else
+
+    line.gsub!(" ","+")
+    #puts line
+    puts eval line
+    end
+  end
+
 end
 ```

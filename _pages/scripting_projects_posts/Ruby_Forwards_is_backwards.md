@@ -1,40 +1,49 @@
 ---
-title: "Ruby Basics"
+title: "Ruby Challenge: Forwards_is_backwards"
 date: 2020-12-05
 tags: [Ruby scripting]
 header:
   #image: "/images/perceptron/percept.jpg"
-excerpt: "Ruby Basics"
+excerpt: "Ruby Challenge: Forwards_is_backwards"
 mathjax: "true"
-permalink: /scripting_projects_posts/Ruby_Basics/
+permalink: /scripting_projects_posts/Ruby_Forwards_is_backwards/
 ---
 
 # H1 Heading
-# Ruby Basics
+# Ruby Challenge: Forwards_is_backwards
 
 ## H2 Heading
 
 ### H3 Heading
 
-"Hello World" Ruby:
-```ruby
-puts "Hello, World!"
-```
-
-"Argumentative" Ruby:
-```ruby
-for i in 0 ... ARGV.length
-   print "#{ARGV[i]} "
-end
-```
-
-"Here_Kitty" Ruby:
+Ruby Code Solution:
 ```ruby
 for arg in ARGV
-   file = File.open(arg)
+  file = File.open(arg)
 
-   file_data = file.read
+  file.each_line do |line|
 
-   puts file_data
+    # Syntax: str.gsub!(pattern, replacement)
+    line.gsub!(/\s/, '')
+    #puts line.inspect
+    #puts line.reverse
+    #puts ""
+    if line == line.reverse
+      puts "True"
+      #puts "-"
+      #BOOL_T = line == line.reverse
+      #puts BOOL_T.to_s.capitalize
+      #result = line == line.reverse
+      #puts result.capitalize
+      #puts ""
+    else
+      puts "False"
+      #puts "-"
+      #puts line == line.reverse
+      #BOOL_F = line == line.reverse
+      #puts BOOL_F.to_s.capitalize
+      #puts ""
+    end
+  end
 end
 ```
