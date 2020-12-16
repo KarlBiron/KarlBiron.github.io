@@ -35,9 +35,7 @@ Here's a numbered list
 3. Third
 
 Ruby code block:
-```Ruby
-#!/usr/bin/env ruby
-
+```ruby
 for arg in ARGV
    file = File.open(arg)
 
