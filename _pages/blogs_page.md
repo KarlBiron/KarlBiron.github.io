@@ -1,7 +1,7 @@
 ---
 layout: archive
-permalink: /machine-learning/
-title: "Machine Learning Posts by Tags"
+permalink: /blogs_page/
+title: "Blogs on Cyber Security Career, Certification, Publications, and Thoughts"
 author_profile: structured
 header:
   images: "/images/fort point.png"

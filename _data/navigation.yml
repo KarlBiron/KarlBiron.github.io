@@ -8,8 +8,8 @@ main:
     url: /scripting_projects_page/
   - title: "PenTest Projects"
     url: /pentest_projects_page/
-  - title: "AI Projects"
-    url: /machine-learning/
+  - title: "Blogs"
+    url: /blogs_page/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
