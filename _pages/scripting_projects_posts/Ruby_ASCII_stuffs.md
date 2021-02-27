@@ -23,7 +23,7 @@ A B C D!
 41 42 43 44 3f 0a 41 20 42 20 43 20 44 21
 ```
 
-Download somefile.txt [HERE](C:\Users\Karl\Desktop\GitHub Portfolio\KarlBiron.github.io\_pages\scripting_projects_posts\Ruby_ASCII_stuffs_somefile.txt)
+(error: Tshoot) Download somefile.txt [HERE](C:\Users\Karl\Desktop\GitHub Portfolio\KarlBiron.github.io\_pages\scripting_projects_posts\Ruby_ASCII_stuffs_somefile.txt)
 ---
 ### ASCII_stuffs Challenge Solution
 ```ruby
@@ -43,6 +43,6 @@ end
 ### NOTES:
 The gsub: "g" stands for global and "sub" stands for substitute.\
 An alternative solution is the .delete method as shown below.\
-⋅⋅⋅a = "\tI have some whitespaces.\t"\
-⋅⋅⋅a.delete!(" ")     #=>  "\tIhavesomewhitespaces.\t"\
+<p>a = "\tI have some whitespaces.\t"<\p>
+&nbsp;&nbsp;&nbsp;&nbsp;a.delete!(" ")     #=>  "\tIhavesomewhitespaces.\t"\
 The H used with the pack method gives you a hex number to string conversion.
