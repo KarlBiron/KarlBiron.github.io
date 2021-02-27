@@ -12,7 +12,7 @@ permalink: /scripting_projects_posts/Ruby_ASCII_Stuffs/
 ---
 ### Task Details:
 Execute the code against the input file (somefile.txt).\
-The expected output results are below.\
+The expected output results are below.
 ```
 ABCD?
 A B C D!
@@ -39,12 +39,10 @@ for arg in ARGV
    puts result
 end
 ```
-<br />
 ---
 ### NOTES:
 The gsub: "g" stands for global and "sub" stands for substitute.\
 An alternative solution is the .delete method as shown below.\
-...a = "\tI have some whitespaces.\t"\
-...a.delete!(" ")     #=>  "\tIhavesomewhitespaces.\t"\
+⋅⋅⋅a = "\tI have some whitespaces.\t"\
+⋅⋅⋅a.delete!(" ")     #=>  "\tIhavesomewhitespaces.\t"\
 The H used with the pack method gives you a hex number to string conversion.
----
