@@ -40,9 +40,10 @@ for arg in ARGV
 end
 ```
 ---
-### NOTES:
+### Solution Notes:
 The gsub: "g" stands for global and "sub" stands for substitute.\
 An alternative solution is the .delete method as shown below.\
-<p>a = "\tI have some whitespaces.\t"<\p>
-&nbsp;&nbsp;&nbsp;&nbsp;a.delete!(" ")     #=>  "\tIhavesomewhitespaces.\t"\
-The H used with the pack method gives you a hex number to string conversion.
+&nbsp;&nbsp;&nbsp;&nbsp;a = "\tI have some whitespaces.\t"\
+&nbsp;&nbsp;&nbsp;&nbsp;a.delete!(" ")     #=>  "\tIhavesomewhitespaces.\t"
+
+The H* used with the pack method gives you a hex number to string conversion.
