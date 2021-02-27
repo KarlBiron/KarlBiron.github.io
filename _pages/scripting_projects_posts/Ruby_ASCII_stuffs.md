@@ -10,7 +10,7 @@ permalink: /scripting_projects_posts/Ruby_ASCII_Stuffs/
 ---
 
 ---
-### ASCII_stuffs Challenge:
+### ASCII_stuffs Challenge Solution
 ```ruby
 for arg in ARGV
    file = File.open(arg)
@@ -25,13 +25,14 @@ for arg in ARGV
 end
 ```
 ---
-<br></br>
+<br />
+
 ---
 ### NOTES:
-The gsub: "g" stands for global and "sub" stands for substitute
-An alternative solution is the .delete method as shown below
-    a = "\tI have some whitespaces.\t"
-    a.delete!(" ")     #=>  "\tIhavesomewhitespaces.\t"
+The gsub: "g" stands for global and "sub" stands for substitute.\
+An alternative solution is the .delete method as shown below.\
+    a = "\tI have some whitespaces.\t"\
+    a.delete!(" ")     #=>  "\tIhavesomewhitespaces.\t"\
 
- The H used with the pack method gives you a hex number to string conversion.
+The H used with the pack method gives you a hex number to string conversion.
 ---
