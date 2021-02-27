@@ -11,9 +11,8 @@ permalink: /scripting_projects_posts/Ruby_Basics/
 
 
 ---
->  <font size="1"> Note: Do not forget to include the Ruby Shebang *"#!/usr/bin/env ruby"* on top of each of the Ruby files for it to run successfully.
+>  <font size="2"> **Note:** Do not forget to include the Ruby Shebang **"#!/usr/bin/env ruby"** on top of each of the Ruby files for it to run successfully.
 I do not have the Shebang in the code sections as this will be repetitive and it also cause a display error in the Markdown code of this blog. </font>
----
 
 ---
 ### "Hello World" Ruby:
