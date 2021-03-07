@@ -9,22 +9,32 @@ mathjax: "true"
 permalink: /scripting_projects_posts/Ruby_Hex_mafs/
 ---
 
-# H1 Heading
-# Ruby Challenge: Hex_mafs
+---
+### Task Details:
+Execute the code against the input file (somefile.txt).\
+The expected output results are below.
+```
+2674
+62674
+```
+---
+### Input File Contents (somefile.txt):
+```
+0x539 0x539
+0x7a69 0x7a69
+```
 
-Ruby Code Solution:
+---
+### Hex_mafs Challenge Solution
 ```ruby
 for arg in ARGV
    file = File.open(arg)
 
    file_data = file.read
 
-   #puts file_data
-
    array = []
 
    file_data.each_line do |line|
-
      array = line.strip.split
      array.each_with_index do |item ,index|
 
@@ -32,9 +42,11 @@ for arg in ARGV
      end
 
      puts array.sum
-
      array = []
    end
-
 end
 ```
+
+### Solution Notes:
+N.A\
+Code walkthrough is still in progress.
