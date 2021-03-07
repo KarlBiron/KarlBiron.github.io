@@ -37,7 +37,7 @@ end
 
 
 ### Solution Notes:
-Convert a String to An Array of Characters
+Firstly, convert the string input into an array of characters.
 The *.split(",")* method splits the data into the comma "," delimeter since this text file is in the form of a CSV.
 The *.map()* method converts the split file into an array.
 The *&:to_f* method converts all the elements within the array to be in the float format.
