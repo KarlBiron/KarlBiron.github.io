@@ -9,10 +9,63 @@ mathjax: "true"
 permalink: /scripting_projects_posts/Ruby_Evenly_Divisible/
 ---
 
-# H1 Heading
-# Ruby Challenge: Evenly_Divisible
+---
+### Task Details:
+Execute the code against the input file (somefile.txt).\
+The expected output results are below.
+```
+5 25
+10 100
+4 99
+```
+---
+### Input File Contents (somefile.txt):
+```
+5
+10
+15
+20
+25
 
-Ruby Code Solution:
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+
+4
+8
+12
+16
+20
+24
+28
+32
+36
+40
+44
+48
+52
+56
+60
+64
+68
+72
+76
+80
+84
+88
+92
+96
+```
+
+---
+### Evenly_Divisible Challenge Solution
 ```ruby
 output = ""
 
@@ -30,15 +83,14 @@ for arg in ARGV
 
      while ((array.first) * counter) <= array.last
        answer = (array.first) * counter
-       ########## ##########
        output = puts answer
-       ########## ##########
        counter += 1
      end
-
      puts output
-
    end
-
 end
 ```
+
+### Solution Notes:
+N.A:\
+This code is still in progress.
