@@ -9,10 +9,23 @@ mathjax: "true"
 permalink: /scripting_projects_posts/Ruby_Find_random_stuffs/
 ---
 
-# H1 Heading
-# Ruby Challenge: Find_random_stuffs
+---
+### Task Details:
+Execute the code against the input file (somefile.txt).\
+The expected output results are below.
+```
+14,21,28,42,49,56,63,77,84,91,98
+56
+```
+---
+### Input File Contents (somefile.txt):
+```
+10 100
+50 60
+```
 
-Ruby Code Solution:
+---
+### Find_random_stuffs Challenge Solution
 ```ruby
 
 final = ""
@@ -27,31 +40,21 @@ final = ""
        output = ""
        array = []
 
-       # Convert the string into an array of two integer
        array = line.split.map(&:to_i)
-       #puts array.class
 
-       # take the first array element and
-       # loop through each number til the loop
-       # reaches the second/last array element
        (array.first..array.last).each do |num|
-         # check if the number is divisible by 7
-         # not divisible by 5, if so, append the number
-         # to the "output" variable
          if (num % 7) == 0 && (num % 5) != 0
            output += "#{num},"
          end
-
        end
-
-       # delete the "," ending for each line and
-       # concatinate a new line for each line
        final += output.delete_suffix(',').concat("\n")
-
      end
-
-     # remove the "\n" from the end of the string
      puts final.strip
-
   end
 ```
+
+### Solution Notes:
+Convert the string into an array of two integers and then take the first array element to loop through each number until the loop reaches the second/last array element.
+The code Checks if the number is divisible by 7 AND not divisible by 5. If so, append the number to the "output" variable
+Delete the "," ending for each line and concatenate a new line for each line.
+Finally, remove the "\n" from the end of the strings.
