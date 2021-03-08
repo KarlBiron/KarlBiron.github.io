@@ -9,10 +9,31 @@ mathjax: "true"
 permalink: /scripting_projects_posts/Ruby_Not_Small/
 ---
 
-# H1 Heading
-# Ruby Challenge: Not_Small
+---
+### Task Details:
+Execute the code against the input file (somefile.txt).\
+The expected output results are below.
+```
+1000
+```
+---
+### Input File Contents (somefile.txt):
+```
+-0.1
+1
+-5
+2
+3
+-11.999999
+1000
+4
+0.3
+100
+-100
+```
 
-Ruby Code Solution:
+---
+### Not_Small Challenge Solution
 ```ruby
 for arg in ARGV
    file = File.open(arg)
@@ -34,3 +55,8 @@ for arg in ARGV
 
 end
 ```
+
+
+### Solution Notes:
+N.A\
+Code walkthrough is still in progress.
