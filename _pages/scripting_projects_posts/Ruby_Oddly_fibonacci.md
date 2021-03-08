@@ -9,10 +9,21 @@ mathjax: "true"
 permalink: /scripting_projects_posts/Ruby_Oddly_fibonacci/
 ---
 
-# H1 Heading
-# Ruby Challenge: Oddly_fibonacci
+---
+### Task Details:
+Execute the code against the input file (somefile.txt).\
+The expected output results are below.
+```
+7519
+```
+---
+### Input File Contents (somefile.txt):
+```
+10 20
+```
 
-Ruby Code Solution:
+---
+### Oddly_fibonacci Challenge Solution
 ```ruby
 def fibonacci(n)
   if n == 1
@@ -30,40 +41,20 @@ for arg in ARGV
 
    file_data = file.read
 
-   #puts file_data
-
-   #array = []
-
    array = file_data.split(" ").map(&:to_i)
 
-   #puts array.inspect
-
    range = (array.first..array.last-1).to_a
-
-   #puts range.inspect
 
    total = []
 
    range.each do |i|
-     #puts i.inspect
-
-     #if i.odd? == true
-       #total += fibonacci(i)
-     #else
-       #print ""
-     #end
-
     total << fibonacci(i)
-
    end
-
-   #puts total.inspect
 
    output = 0
 
    total.each do |j|
      if j.odd? == true
-       #puts j
        output += j
      else
        print ""
@@ -75,3 +66,19 @@ puts output
 
 end
 ```
+
+
+### Solution Notes:
+1 (1st value)\
+0 + 1 = 1 (2nd)\
+1 + 1 = 2 (3rd)\
+1 + 2 = 3 (4th)\
+2 + 3 = 5 (5th)\
+3 + 5 = 8 (6th)\
+5 + 8 = 13 (7th)\
+8 + 13 = 21 (8th)\
+13 + 21 = 34 (9th)\
+21 + 34 = 55 (10th)
+
+N.A\
+Code walkthrough is still in progress.
