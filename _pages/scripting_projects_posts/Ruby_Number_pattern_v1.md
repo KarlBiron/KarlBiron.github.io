@@ -9,17 +9,26 @@ mathjax: "true"
 permalink: /scripting_projects_posts/Ruby_Number_pattern_v1/
 ---
 
-# H1 Heading
-# Ruby Challenge: Number_pattern_v1
+---
+### Task Details:
+Execute the code against the input file (somefile.txt).\
+The expected output results are below.
+```
+7
+```
+---
+### Input File Contents (somefile.txt):
+```
+10 11 14 17 24
+```
 
-Ruby Code Solution:
+---
+### Number_pattern_v1 Challenge Solution
 ```ruby
 for arg in ARGV
    file = File.open(arg)
 
    file_data = file.read.to_i
-
-   #puts file_data
 
    first = file_data + 3
    second = file_data + 4
@@ -31,3 +40,7 @@ for arg in ARGV
 
 end
 ```
+
+### Solution Notes:
+N.A\
+Code walkthrough is still in progress.
