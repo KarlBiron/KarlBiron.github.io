@@ -9,10 +9,31 @@ mathjax: "true"
 permalink: /scripting_projects_posts/Ruby_Quad_math/
 ---
 
-# H1 Heading
-# Ruby Challenge: Quad_math
+---
+### Task Details:
+Execute the code against the input file (somefile.txt).\
+The expected output results are below.
+```
+32
+8.0
+10
+4.8
+0
+-2.7
+```
+---
+### Input File Contents (somefile.txt):
+```
+2 2 2 2
+.5 .5 .5 .5
+1 2 3 4
+.3 .3 .3 .3
+-1 -100 99 2
+-.5 -.2 -1 -1
+```
 
-Ruby Code Solution:
+---
+### Quad_math Challenge Solution
 ```ruby
 output = []
 
@@ -21,43 +42,16 @@ for arg in ARGV
 
    file_data = file.read
 
-   #puts file_data
-
-   #array = file_data.split(" ").map(&:to_f)
-
-   #puts array.inspect
-   #puts array.class
-   #puts array
-
    file_data.each_line do |line|
-     #puts line.split.map!(&:to_i).sum.inspect
 
      array = line.split(" ").map(&:to_f)
 
-     #puts array.inspect
-     #puts array.class
-     #puts array.uniq.size == 1
-
-=begin
-     #array = []
-     #array << line.split(" ").map!(&:to_f)
-     #puts array.inspect
-     #puts array.class
-     #puts array.uniq.size == 1
-=end
-
     if (array.uniq.size == 1) == true
-      #puts (array.sum) * 4
       output << ((array.sum) * 4)
     else
-      #puts array.sum
       output << (array.sum)
     end
-
    end
-
-   #puts output.inspect
-   #puts output.class
 
    output.each do |i|
      if i == 8.0
@@ -71,3 +65,8 @@ for arg in ARGV
 
 end
 ```
+
+
+### Solution Notes:
+N.A\
+Code walkthrough is still in progress.
