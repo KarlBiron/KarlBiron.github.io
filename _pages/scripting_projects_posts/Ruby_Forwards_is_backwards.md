@@ -9,41 +9,39 @@ mathjax: "true"
 permalink: /scripting_projects_posts/Ruby_Forwards_is_backwards/
 ---
 
-# H1 Heading
-# Ruby Challenge: Forwards_is_backwards
+---
+### Task Details:
+Execute the code against the input file (somefile.txt).\
+The expected output results are below.
+```
+True
+False
+False
+```
+---
+### Input File Contents (somefile.txt):
+```
+radar
+creepy
+Radar
+```
 
-## H2 Heading
-
-### H3 Heading
-
-Ruby Code Solution:
+---
+### Forwards_is_backwards Challenge Solution
 ```ruby
 for arg in ARGV
   file = File.open(arg)
 
   file.each_line do |line|
-
-    # Syntax: str.gsub!(pattern, replacement)
     line.gsub!(/\s/, '')
-    #puts line.inspect
-    #puts line.reverse
-    #puts ""
     if line == line.reverse
       puts "True"
-      #puts "-"
-      #BOOL_T = line == line.reverse
-      #puts BOOL_T.to_s.capitalize
-      #result = line == line.reverse
-      #puts result.capitalize
-      #puts ""
     else
       puts "False"
-      #puts "-"
-      #puts line == line.reverse
-      #BOOL_F = line == line.reverse
-      #puts BOOL_F.to_s.capitalize
-      #puts ""
     end
   end
 end
 ```
+
+### Solution Notes:
+Syntax: str.gsub!(pattern, replacement)
