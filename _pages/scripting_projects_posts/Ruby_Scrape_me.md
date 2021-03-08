@@ -9,10 +9,21 @@ mathjax: "true"
 permalink: /scripting_projects_posts/Ruby_Scrape_me/
 ---
 
-# H1 Heading
-# Ruby Challenge: Scrape_me
+---
+### Task Details:
+Execute the code against the input file (somefile.txt).\
+The expected output results are below.
+```
+N.A
+```
+---
+### Input File Contents (somefile.txt):
+```
+N.A
+```
 
-Ruby Code Solution:
+---
+### Scrape_me Challenge Solution
 ```ruby
 require 'open-uri'
 
@@ -24,3 +35,8 @@ for arg in ARGV
 
 end
 ```
+
+
+### Solution Notes:
+N.A\
+Code walkthrough is still in progress.
