@@ -9,10 +9,26 @@ mathjax: "true"
 permalink: /scripting_projects_posts/Ruby_My_buckets_got_a_hole_in_it/
 ---
 
-# H1 Heading
-# Ruby Challenge: My_buckets_got_a_hole_in_it
+---
+### Task Details:
+Execute the code against the input file (somefile.txt).\
+The expected output results are below.
+```
+0101010021
+```
+---
+### Input File Contents (somefile.txt):
+```
+12
+87
+55
+32
+99
+85
+```
 
-Ruby Code Solution:
+---
+### My_buckets_got_a_hole_in_it Challenge Solution
 ```ruby
 zero = 0
 one = 0
@@ -31,8 +47,6 @@ for arg in ARGV
    file = File.open(arg)
 
    file_data = file.read
-
-   #puts file_data.inspect
 
    file_data.each_line do |line|
      if line.to_i.between?(0,9)
@@ -71,6 +85,9 @@ for arg in ARGV
 
   print output.inspect
 
-
 end
 ```
+
+### Solution Notes:
+N.A\
+Code walkthrough is still in progress.
