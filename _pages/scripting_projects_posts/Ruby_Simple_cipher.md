@@ -9,10 +9,21 @@ mathjax: "true"
 permalink: /scripting_projects_posts/Ruby_Simple_cipher/
 ---
 
-# H1 Heading
-# Ruby Challenge: Simple_cipher
+---
+### Task Details:
+Execute the code against the input file (somefile.txt).\
+The expected output results are below.
+```
+We Attack At Dawn
+```
+---
+### Input File Contents (somefile.txt):
+```
+We are going to the starbucks, time meow. Attack on titan is pretty insane. At 0530, the BN run will start. Dawn is my favorite dish soap, it's totally dope.
+```
 
-Ruby Code Solution:
+---
+### Simple_cipher Challenge Solution
 ```ruby
 for arg in ARGV
    file = File.open(arg)
@@ -32,3 +43,7 @@ for arg in ARGV
 
 end
 ```
+
+### Solution Notes:
+N.A\
+Code walkthrough is still in progress.
