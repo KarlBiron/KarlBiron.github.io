@@ -9,23 +9,28 @@ mathjax: "true"
 permalink: /scripting_projects_posts/Ruby_White_socks_with_boots/
 ---
 
-# H1 Heading
-# Ruby Challenge: White_socks_with_boots
+---
+### Task Details:
+Execute the code against the input file (somefile.txt).\
+The expected output results are below.
+```
+N.A
+```
+---
+### Input File Contents (somefile.txt):
+```
+N.A
+```
 
-Ruby Code Solution:
+---
+### White_socks_with_boots Challenge Solution
 ```ruby
 require 'socket'
 
 for i in 0 ... ARGV.length
-   #puts "#{i} #{ARGV[i]}"
-   #=>  0 listen.runcode.ninja
-   #=>  1 9005
 
    hostname = "#{ARGV[0]}"
    port = "#{ARGV[1]}".to_i
-
-   #puts hostname
-   #puts port
 
    s = TCPSocket.open(hostname, port)
 
@@ -38,3 +43,9 @@ break
 
 end
 ```
+
+
+### Solution Notes:
+puts "#{i} #{ARGV[i]}"\
+=>  0 listen.runcode.ninja\
+=>  1 9005
